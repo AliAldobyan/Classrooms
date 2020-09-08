@@ -153,6 +153,7 @@ def signin(request):
             if auth_user is not None:
                 login(request, auth_user)
                 return redirect('classroom-list')
+				
     context = {
         "form":form
     }

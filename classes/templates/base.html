@@ -8,7 +8,7 @@
     <title>Classrooms</title>
   </head>
   <body>
-
+    {% include "navbar.html" %}
     {% if messages %}
       <div class="alert alert" style="background-color: #e3f2fd;" role="alert">
         {% for message in messages %}
@@ -18,7 +18,7 @@
       <br>
     {% endif %}
     <br>
-    {% include "navbar.html" %}
+
     <div class="container">
       {% block content %}
 
